@@ -18,11 +18,10 @@ const Gifts = (props) => {
                 gifts && gifts.length > 0 ?
                 gifts.map((gift,index) => 
                     
-                   <Card key={gift.id}
-                         id={gift.id} 
+                   <Card id={gift.id} 
                          image={gift.image} 
                          name={gift.name} 
-                         pricePoint={gift.pricePoint} 
+                         pricepoint={gift.pricePoint} 
                          audience={gift.audience} />
 
                 ) : <h3 className="noResults">{'No Gifts Yet 😞'}</h3>
